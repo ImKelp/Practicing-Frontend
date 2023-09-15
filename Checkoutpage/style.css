@@ -1,0 +1,256 @@
+body {
+  background-color: white;
+}
+@font-face {
+  font-family: main-font;
+  src: url("/Users/yunis/Downloads/product-sans/Product Sans Regular.ttf");
+}
+
+.rec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.rectangle {
+  width: 550px;
+  height: 650px;
+  border-radius: 2%;
+  background-color: white;
+  border: 1px solid gray;
+}
+#checkout-title {
+  font-family: main-font;
+  padding-top: 40px;
+  padding-left: 25px;
+}
+#info-request {
+  font-family: main-font;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  color: gray;
+}
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 25px;
+  padding-top: 30px;
+
+}
+#apple-pay-button {
+  height: 40px;
+  width: 500px;
+  border: 0.5px solid gray;
+  background-color: black;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 5px gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#apple-pay-button:hover {
+  border: 1px solid white;
+}
+
+#divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: main-font;
+  font-size: 15px;
+  color: gray;
+
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+#creditcard-title {
+  font-family: main-font;
+  font-size: 15px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+
+}
+.creditcard-info-container {
+  padding-left: 25px;
+  padding-top: 7px;
+}
+#creditcard-rectangle {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 5px gray;
+  border: 0.5px solid gray;
+
+}
+
+.card-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+#form-container {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+#card-icon {
+  padding-left: 10px;
+  margin: none;
+  border: 0px;
+}
+
+#card-number {
+  font-family: main-font;
+  font-size: 15px;
+  border: none;
+  margin: none;
+
+  padding-right: 160px;
+}
+
+#card-number::placeholder {
+  color: #bdbcb9;
+}
+
+#card-number:focus {
+  outline: none;
+  color: black;
+}
+
+#expiry-month {
+  font-family: main-font;
+  font-size: 15px;
+  border: none;
+  margin: none;
+  width: 70px;
+}
+#expiry-month::placeholder {
+  color: #bdbcb9;
+}
+
+#expiry-month:focus {
+  outline: none;
+  color: black;
+}
+
+#cvc {
+  font-family: main-font;
+  font-size: 15px;
+  border: none;
+  margin: none;
+  width: 60px;
+}
+#cvc::placeholder {
+  color: #bdbcb9;
+}
+#cvc:focus {
+  outline: none;
+  color: black;
+}
+
+/*----------------------------------------------------------------*/
+
+.name-title, .postcode-title {
+  font-family: main-font;
+  font-size: 15px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+
+}
+.name-container, .postcode-container {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+.name-rectangle, .postcode-rectangle {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 5px gray;
+  border: 0.5px solid gray;
+
+}
+
+.name-on-card-container,  .postcode-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+
+.name-input, .postcode-input {
+  font-family: main-font;
+  font-size: 15px;
+  border: none;
+  margin: none;
+
+  padding-right: 290px;
+}
+
+.name-input::placeholder, .postcode-input::placeholder {
+  color: #bdbcb9;
+}
+
+.name-input:focus, .postcode-input:focus {
+  outline: none;
+  color: black;
+}
+
+.pay-cancel-container {
+  height: 140px;
+  width: 300px;
+  display: grid;
+  padding-left: 300px;
+  padding-top: 50px;
+}
+
+.pay-button {
+  margin-left: 20px;
+  border: 0.5px solid gray;
+  background-color: black;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 5px gray;
+  height: 40px;
+  width: 100px;
+
+  font-family: main-font;
+  font-size: 15px;
+  color: white;
+}
+.cancel-button {
+  border: 0.5px solid gray;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 5px gray;
+  height: 40px;
+  width: 100px;
+
+  font-family: main-font;
+  font-size: 15px;
+  color: gray;;
+}
+.cancel-button:hover {
+  font-family: main-font;
+  font-size: 15px;
+  color: black;
+  border: 1px solid black;
+}
+.pay-button:hover {
+  font-family: main-font;
+  font-size: 15px;
+  color: white;
+  border: 1px solid white;
+}

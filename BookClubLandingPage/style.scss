@@ -1,0 +1,107 @@
+$global-font: Mina;
+
+body {
+    font-family: $global-font;
+    height: 95vh;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav-buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.page-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(48, 48, 48, 0.5) 0 2px 5px 0;
+    height: 25px;
+    width: 80px;
+    line-height: 0px;
+    border: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+#login:hover, #join-us:hover, #search:hover, #join-community:hover{
+    border: 2px solid rgb(48, 48, 48);
+    display: block;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+#heading {
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#description, #qoute {
+    font-size: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#author {
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    padding: 10px;
+}
+
+#placeholder-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.left-side-inner-btn-container {
+    padding-top: 15px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#join-community {
+    align-items: center;
+    padding: 15px;
+    width: 450px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    #heading {
+        font-size: 30px;
+    }
+    #description {
+        font-size: 15px;;
+    }
+
+    #join-community {
+        height: auto;
+        width: 100%;
+    }
+}

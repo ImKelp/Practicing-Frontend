@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Time</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+</head>
+<body>
+    <div class="wrapper">
+        <div class='main-container'>
+            <div class="x">
+                <div class="current-region" id="current-region">loading...</div>
+                <button id="change-timezone" onclick="openModal()">Change Timezone</button>
+            </div>
+            <div class="current-time" id="current-time"">loading...</div>
+            <div class="current-date" id="current-date">loading...</div>
+
+            <div class="timezone-modal", id="timezone-modal">
+                <div class="modal-content">
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-container">
+                            <label for="timezones">Select timezone</label>
+                            <select name="timezones" id="timezones"></select>
+                            <button id="close-btn">&times;</button>
+                        </div>
+                    </div>
+                    <div class=y>
+                        <button id="save-option">save</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+
+</html>

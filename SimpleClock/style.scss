@@ -1,0 +1,117 @@
+body {
+    font-family: "Architects Daughter"; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container{
+    width: 500px;
+}
+
+.time-region-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.current-region {
+    text-align: right;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@mixin buttons {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0px 8px 15px rgb(209, 209, 209);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+#change-timezone {
+    @include buttons
+}
+
+#change-timezone:hover {
+    opacity: 1;
+}
+
+
+.current-time {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.current-date {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.timezone-modal {
+    display: none; // Hidden by default
+    position: fixed; // Stay in place
+    z-index: 1; // Sits on top
+    left: 0;
+    top: 0;
+    width: 100%; // Full width
+    height: 100%; // Full height
+    overflow: auto; // Enable scroll if needed;
+    background-color: rgb(0, 0, 0); // Fallback color
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 6px solid red;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 25%;
+    height: 10%;
+}
+
+#close-btn {
+    font-size: 20px;
+    color:rgb(143, 143, 143);
+    border: 2px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 15px rgb(209, 209, 209);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+#close-btn:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.save-container {
+    display: flex;
+    justify-content: end;
+    //border: 2px solid orange;
+    padding-top: 10px;
+}
+
+#save-option {
+    @include buttons
+}
+#save-option:hover {
+    opacity: 1;
+}
